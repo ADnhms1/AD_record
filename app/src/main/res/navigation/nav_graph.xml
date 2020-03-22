@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/AD_main">
+
+    <fragment
+        android:id="@+id/AD_main"
+        android:name="com.example.ad_record.AD_main"
+        android:label="fragment_ad_main"
+        tools:layout="@layout/fragment_ad_main" >
+        <action
+            android:id="@+id/action_AD_main_to_AD_recordlist"
+            app:destination="@id/AD_recordlist" />
+    </fragment>
+    <fragment
+        android:id="@+id/AD_recordlist"
+        android:name="com.example.ad_record.AD_recordlist"
+        android:label="fragment_ad_recordlist"
+        tools:layout="@layout/fragment_ad_recordlist" />
+</navigation>
